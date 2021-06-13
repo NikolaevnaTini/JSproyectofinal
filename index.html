@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <script defer src="/js/main.js"></script>
-    <meta name="description" content="KWIK EMART by TINI, es una tienda online para verdaderos fanaticos de Los Simpsons, quienes quieran adquirir merchandising y además jugar a divertidas trivias.">
+    <meta name="description" content="KWIK EMART by TINI, es una tienda online para verdaderos fanaticos de Los Simpsons, para quienes quieran adquirir merchandising y además jugar a divertidas trivias.">
     <meta name="author" content="Tini Hryshchenko">
     <title>Kwik Emar-TINI</title>
 </head>
@@ -33,13 +33,14 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active"><a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Sobre KWIK E MART</a></li>
                 <li class="nav-item"><a class="nav-link" href=#>Contacto</a></li>
             </ul>
         </div>
     </div>
 </nav>
 </section>
+
+
 <section class="container">
         <h1 class="my-4">....</h1>
         <div class="list-group">
@@ -95,11 +96,15 @@
           </a>
         </div>
         
-        <select class="botonClick" id="filtro">
-          <option value="all">Todos los productos</option>
-          <option value="Vegano">Veganos</option>
-          <option value="Organico">Organicos</option>
-      </select>
+</section>
+
+<section class="container">
+<p class="text-white">Busqueda de Productos:</p>
+<select class="botonClick" id="filtro">
+  <option value="all">Mostrar Todos</option>
+  <option value="Vegano">Veganos</option>
+  <option value="Organico">Organicos</option>
+</select>
 </section>
 
 
@@ -145,7 +150,7 @@
 <!--API FRASE SIMPSONS-->
 <div class="container">
 <h3 class="text-center text-white"><strong>Simpsons Quotes</strong> 
-  <br>para refrescar momentos divertidos... <br>(en ingles)</h2>
+  <br>para refrescar momentos divertidos... <br>(en inglés)</h2>
 
 <blockquote class="blockquote">
   <p id="quote"></p>
@@ -156,25 +161,46 @@
 <button id="siguiente" class="text-center btn btn-warning">Siguiente Frase</button>
 </div>
 <br>
-<!-- trivia -->
-<main class= "container">
-  <h3 class="text-center text-white alert" role="alert"><strong>Trivia </strong> 
-  <br>de frases de Los Simpsons... <br>(ahora en español)</h2>
 
-  <button id=boton-show>¡PLAN DENTAL!... Lisa necesita...</button>
-  <p id=boton style="display:none;">FRENOS</p>
+<section class="container">
+<ul class="row gif">
+</ul>
+</section>
+
+<!-- trivia -->
+<main class= "row">
+  <h3 class="text-center text-white alert col-12" role="alert"><strong>Trivia </strong> 
+  <br>de frases de Los Simpsons... <br>(ahora en español)</h3>
+  <div class="container">
+    <div class="col-12 col-md-4 mb-2">
+    <button id=boton-show>¡PLAN DENTAL!... Lisa necesita...</button>
+  <p id=boton  class="text-white" style="display:none;">...FRENOS</p>
 
   <button id=boton-show2>TIENE TODO EL DINERO DEL MUNDO... pero hay algo que no puede comprar...</button>
-  <p id=boton2 style="display:none;">UN DINOSAURIO</p>
+  <p id=boton2 class="text-white" style="display:none;">...UN DINOSAURIO</p>
   <button id=boton-show3>¡CALLENSE YA MALDITA SEA, DEJEN DORMIR....</button>
-  <p id=boton3 style="display:none;">AL PROJIMO</p>
+  <p id=boton3 class="text-white" style="display:none;">...AL PROJIMO</p>
   <button id=boton-show4>HABLE MAS FUERTE QUE TENGO...</button>
-  <p id=boton4 style="display:none;">UNA TOALLA</p>
+  <p id=boton4 class="text-white" style="display:none;">...UNA TOALLA</p>
   <button id=boton-show5>MI HOMERO no es comunista. Podrá ser mentiroso, puerco, idiota, comunista, pero nunca.....</button>
-  <p id=boton5 style="display:none;">UNA ESTRELLA PORNO</p>
+  <p id=boton5 class="text-white" style="display:none;">...UNA ESTRELLA PORNO</p>
   <button id=boton-show6>OH MARGE, mi reina, Lisa mi pequeña princesa… Y cómo olvidarme del....</button>
-  <p id=boton6 style="display:none;">NIÑO RATA</p>
-  </main>
+  <p id=boton6 class="text-white" style="display:none;">...NIÑO RATA</p>
+  <button id=boton-show7>A LA GRANDE le puse...</button>
+  <p id=boton7 class="text-white" style="display:none;">...CUCA</p>
+  <button id=boton-show8>QUE ELEGANCIA la de....</button>
+  <p id=boton8 class="text-white" style="display:none;">...FRANCIA</p>
+  <button id=boton-show9>USTED ESTA MAL! TODO EL MALDITO SISTEMA....</button>
+  <p id=boton9 class="text-white" style="display:none;">...ESTA MAL</p>
+  <button id=boton-show10>EN UN MOMENTO ASI, solo se puede....</button>
+  <p id=boton10 class="text-white"style="display:none;">...REIR</p>
+  <button id=boton-show11>TE ACUERDAS DE ALF? Volvio!....</button>
+  <p id=boton11 class="text-white" style="display:none;">...EN FORMA DE FICHAS</p>
+  <button id=boton-show12>QUE PASO VIEJO? Antes eras....</button>
+  <p id=boton12 class="text-white"style="display:none;">...CHEVERE </p>
+  </div>
+</div> 
+</main>
 <br>
 
 

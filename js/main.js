@@ -74,7 +74,6 @@ stockProductos.push(new Producto(20, "Klavh Kalash", 14,"20.jpg", 9, "Vegano"))
 }
 
 //FILTRO//
-
 const selectFiltro = document.getElementById('filtro')
 
 
@@ -191,10 +190,10 @@ if (edad.value < 18){
 // Botón Jquery de Trivia en español con animaciones 
 
 $("#boton-show").on("click", function () { 
-$("#boton").show(700);
+$("#boton").show(500);
 });
 $("#boton-show2").on("click", function () { 
-$("#boton2").toggle(300);
+$("#boton2").toggle(600);
 });
 $("#boton-show3").on("click", function () { 
 $("#boton3").slideDown(600);
@@ -208,6 +207,25 @@ $("#boton5").slideDown(600);
 $("#boton-show6").on("click", function () { 
   $("#boton6").slideDown(600);
 });
+$("#boton-show7").on("click", function () { 
+  $("#boton7").slideDown(600);
+});
+$("#boton-show8").on("click", function () { 
+  $("#boton8").slideDown(600);
+});
+$("#boton-show9").on("click", function () { 
+  $("#boton9").slideDown(600);
+});
+$("#boton-show10").on("click", function () { 
+  $("#boton10").slideDown(600);
+});
+$("#boton-show11").on("click", function () { 
+  $("#boton11").slideDown(600);
+});
+$("#boton-show12").on("click", function () { 
+  $("#boton12").slideDown(600);
+});
+
 
 
       // mercadopago
@@ -258,3 +276,26 @@ const llamarApi = () => {
 } 
 
 $('#siguiente').on('click', llamarApi)
+
+
+//AJAX
+
+const KEY = 'kJE7uQBSyv3Gv3vNLCtMKke3j3Nkn2W0'
+
+$.get('http://api.giphy.com/v1/gifs/search?api_key=kJE7uQBSyv3Gv3vNLCtMKke3j3Nkn2W0&q=simpsons&limit=12',function(response){
+  console.log(response.data[0].images.downsized_medium.url)
+
+
+
+    response.data.forEach(element=>{
+
+  
+      $('.gif').append(`
+                    <li class='col-12 col-md-4 mb-2'>
+                      <img src=${element.images.downsized_medium.url} alt='' />
+                    </li>
+    `)
+
+})
+})
+
