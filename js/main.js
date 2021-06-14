@@ -275,10 +275,7 @@ $('#siguiente').on('click', llamarApi)
 
 const KEY = 'kJE7uQBSyv3Gv3vNLCtMKke3j3Nkn2W0'
 
-$.get('http://api.giphy.com/v1/gifs/search?api_key=kJE7uQBSyv3Gv3vNLCtMKke3j3Nkn2W0&q=simpsons&limit=12',function(response){
-  console.log(response.data[0].images.downsized_medium.url)
-
-
+$.get('https://api.giphy.com/v1/gifs/search?api_key=kJE7uQBSyv3Gv3vNLCtMKke3j3Nkn2W0&q=simpsons&limit=12',function(response){
 
     response.data.forEach(element=>{
 
@@ -291,4 +288,3 @@ $.get('http://api.giphy.com/v1/gifs/search?api_key=kJE7uQBSyv3Gv3vNLCtMKke3j3Nkn
 
 })
 })
-
