@@ -1,10 +1,3 @@
-// jQuery(()=>{
-//   console.log("Bienvenido :) ")
-//    setTimeout(()=>{
-//       alert('Gracias por visitar mi pagina :)')
-//    }, 5000)
-// })
-
 // Funcion Constructora //
 class Producto{
     constructor(id, nombre, precio, foto, stock, tipo){
@@ -179,7 +172,7 @@ document.getElementById("campoEdad").addEventListener("change",enviarFormulario)
 function enviarFormulario(){
   let edad = document.getElementById("campoEdad")
 if (edad.value < 18){
-  document.getElementById("leyenda").innerHTML ="Sos menor de edad, no podés ser parte del mundo UNIK."
+  document.getElementById("leyenda").innerHTML ="Sos menor de edad, no podés ser parte del mundo KWIK E MART."
   edad.style.background ="red";
 } else {
   document.getElementById("leyenda2").innerHTML ="Muchas gracias por haber ingresado tus datos!"
@@ -228,7 +221,7 @@ $("#boton-show12").on("click", function () {
 
 
 
-      // mercadopago
+      // MERCADOPAGO
 
 async function generarLinkDePago() {
   const productsToMP = carrito.map((element) => {
@@ -278,7 +271,7 @@ const llamarApi = () => {
 $('#siguiente').on('click', llamarApi)
 
 
-//AJAX
+//GIF
 
 const KEY = 'kJE7uQBSyv3Gv3vNLCtMKke3j3Nkn2W0'
 
